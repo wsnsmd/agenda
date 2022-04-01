@@ -98,7 +98,7 @@ export default function Index() {
   ));
 
   function getSpv() {
-    if (agenda.data.length >= 2) return "auto";
+    if (agenda.data.length >= 2) return 3;
     else return 1;
   }
 
@@ -173,7 +173,7 @@ export default function Index() {
               autoHeight={true}
               spaceBetween={20}
               slidesPerView={getSpv()}
-              freeMode={true}
+              freeMode={false}
               direction="vertical"
               modules={[Autoplay, Pagination, FreeMode]}
               autoplay={{
