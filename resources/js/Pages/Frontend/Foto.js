@@ -184,7 +184,7 @@ export default function Index() {
               // centeredSlides={true}
               autoHeight={true}
               spaceBetween={20}
-              slidesPerView={getSpv()}
+              slidesPerView="auto"
               freeMode={false}
               direction="vertical"
               modules={[Autoplay, Pagination, FreeMode]}
@@ -192,7 +192,8 @@ export default function Index() {
                 delay: 5000,
                 disableOnInteraction: false,
               }}
-              loop={true}
+              loop={agenda.data.length > 3 ? true : false}
+              loopedSlides={agenda.data.length > 3 ? agenda.data.length : null}
             >
               {swipSlide}
             </Swiper>

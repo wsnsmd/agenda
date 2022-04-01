@@ -25,7 +25,6 @@ var pusher = new Pusher("9d204a3a74049db1b7f7", {
 
 var channel = pusher.subscribe("app-eagenda");
 channel.bind("App\\Events\\Refresh", function (data) {
-  // console.log(data.page);
   if(data.page === 'video' || data.page === 'ticker')
     window.location.reload(false);
 });
@@ -162,7 +161,7 @@ export default function Index() {
               // centeredSlides={true}
               autoHeight={true}
               spaceBetween={20}
-              slidesPerView={getSpv()}
+              slidesPerView="auto"
               freeMode={false}
               direction="vertical"
               modules={[Autoplay, Pagination, FreeMode]}
@@ -170,7 +169,8 @@ export default function Index() {
                 delay: 5000,
                 disableOnInteraction: false,
               }}
-              loop={true}
+              loop={agenda.data.length > 3 ? true : false}
+              loopedSlides={agenda.data.length > 3 ? agenda.data.length : null}
             >
               {swipSlide}
             </Swiper>
