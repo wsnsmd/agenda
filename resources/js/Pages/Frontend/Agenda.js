@@ -98,8 +98,9 @@ export default function Index() {
   ));
 
   function getSpv() {
-    if (agenda.data.length > 3) return 3;
-    else return agenda.data.length;
+    if (agenda.data.length > 3) return "auto";
+    
+    return agenda.data.length;
   }
 
   useEffect(() => {
