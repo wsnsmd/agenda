@@ -170,7 +170,7 @@ export default function Index() {
                 delay: 5000,
                 disableOnInteraction: false,
               }}
-              loop={agenda.data.length > 3 ? true : false}
+              loop={true}
             >
               {swipSlide}
             </Swiper>
