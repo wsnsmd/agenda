@@ -24,7 +24,7 @@ var pusher = new Pusher("9d204a3a74049db1b7f7", {
 
 var channel = pusher.subscribe("app-eagenda");
 channel.bind("App\\Events\\Refresh", function (data) {
-  if(data.page === 'foto' || data.page === 'ticker')
+  if(data.page === 'foto' || data.page === 'ticker' || data.page === 'agenda')
     window.location.reload(false);
 });
 
