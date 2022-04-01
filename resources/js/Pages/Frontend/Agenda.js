@@ -98,8 +98,8 @@ export default function Index() {
   ));
 
   function getSpv() {
-    if (agenda.data.length >= 2) return 3;
-    else return 1;
+    if (agenda.data.length > 3) return 3;
+    else return agenda.data.length;
   }
 
   useEffect(() => {
@@ -181,6 +181,7 @@ export default function Index() {
                 disableOnInteraction: false,
               }}
               loop={agenda.data.length > 3 ? true : false}
+              loopedSlides={agenda.data.length > 3 ? agenda.data.length : null}
             >
               {swipSlide}
             </Swiper>
