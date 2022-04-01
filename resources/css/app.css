@@ -1,0 +1,71 @@
+/* Base */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Components */
+@import 'components/button';
+@import 'components/form';
+
+/* Utilities */
+@import 'tailwindcss/utilities';
+
+.rdt_TableCol{
+    @apply px-6 py-3 border-b border-t border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.rdt_TableCell{
+    @apply text-sm;
+}
+
+.bg-stat-pink{
+    @apply bg-pink-600;
+}
+
+.bg-stat-green{
+    @apply bg-green-600;
+}
+
+.bg-stat-jingga{
+    @apply bg-jingga-300;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.fc { /* the calendar root */
+    @apply max-w-full max-h-full text-xs text-gray-900 uppercase
+}
+
+.fc-toolbar-title {
+    @apply text-2xl font-bold
+}
+
+.fc-col-header {
+    @apply bg-green-800 text-white text-2xl font-bold
+}
+
+.fc-daygrid-event-harness {
+    @apply pb-1
+}
+
+.fc-daygrid-event {
+    @apply bg-amber-200 
+}
+
+.fc-event-title {
+    @apply m-1 px-1 text-base font-medium break-normal whitespace-normal normal-case break-words text-gray-800
+}
+
+.fc-event-time {
+    @apply text-lg font-extrabold break-normal whitespace-normal normal-case break-words text-gray-800
+}
+
+.fc-list-event {
+    @apply m-2 text-sm font-medium break-normal whitespace-normal normal-case text-lg text-gray-800
+}
+
+.fc-list-event-time {
+    @apply font-extrabold break-normal whitespace-normal normal-case text-2xl text-gray-800
+}
