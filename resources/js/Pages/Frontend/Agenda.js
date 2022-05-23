@@ -150,7 +150,7 @@ export default function Index() {
             <div className="bg-white p-2 w-full">
               <FullCalendar
                 plugins={[dayGridPlugin, listPlugin]}
-                initialView="dayGridWeek"
+                initialView="listWeek"
                 headerToolbar={{
                   left: "dayGridWeek,listWeek",
                   center: "title",
