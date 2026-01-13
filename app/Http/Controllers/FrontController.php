@@ -24,9 +24,9 @@ class FrontController extends Controller
 {
     public function __construct() 
     {
-        $agent = new Agent();
-        if($agent->isMobile())
-            abort(404);
+        // $agent = new Agent();
+        // if($agent->isMobile())
+        //     abort(404);
     }
     /**
      * Display a listing of the resource.
