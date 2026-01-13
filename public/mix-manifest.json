@@ -1,4 +1,14 @@
 {
-    "/js/app.js": "/js/app.js?id=ba870ad5edfcf25fd11e0ede2042cd78",
-    "/css/app.css": "/css/app.css?id=4186b3530d789d0b6b506ccceb628e0b"
+    "/js/app.js": "/js/app.js?id=258fce3b1e1adfa849b4523b9d763f0f",
+    "/js/reactPlayerHls.js": "/js/reactPlayerHls.js?id=bbf0053e562925e375daf84f9cfb4966",
+    "/js/reactPlayerDash.js": "/js/reactPlayerDash.js?id=ec35255c6bd430973d04046ee10730f6",
+    "/js/reactPlayerMux.js": "/js/reactPlayerMux.js?id=cbc79bb1a56ed2c412f9eb5122c02b70",
+    "/js/reactPlayerYouTube.js": "/js/reactPlayerYouTube.js?id=b88f278a420ff280286796fc2142ec3a",
+    "/js/reactPlayerVimeo.js": "/js/reactPlayerVimeo.js?id=d6929113f2feba6803ff8a3ab25b8057",
+    "/js/reactPlayerWistia.js": "/js/reactPlayerWistia.js?id=cf74346fb0999736dad62a72cf7d9651",
+    "/js/reactPlayerSpotify.js": "/js/reactPlayerSpotify.js?id=85f283d68fa0b67b3f9018268b053946",
+    "/js/reactPlayerTwitch.js": "/js/reactPlayerTwitch.js?id=3a856a89b4dc4a85a8b3d54f99b2cf99",
+    "/js/reactPlayerTiktok.js": "/js/reactPlayerTiktok.js?id=cb838f640981d952ae964b0a0d9e5e33",
+    "/js/reactPlayerPreview.js": "/js/reactPlayerPreview.js?id=6540870095f370bc0d12ede3b2fb13d8",
+    "/css/app.css": "/css/app.css?id=e2d8edc23e48e0dbec256870a5e19cef"
 }

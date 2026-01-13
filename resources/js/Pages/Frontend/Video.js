@@ -31,7 +31,7 @@ channel.bind("App\\Events\\Refresh", function (data) {
 
 export default function Index() {
   const { agenda, video, ticker } = usePage().props;
-  const playlist = video.data.map((v) => v.url);
+  const playlist = video.data[0]?.url;
   const { height, width } = useWindowDimensions();
   const [divHeight, setDivHeight] = useState(0);
 
@@ -50,6 +50,8 @@ export default function Index() {
     var date = moment(dateStr, "DD-MM-YYYY").toDate();
     return date.toLocaleDateString(locale, { weekday: "long" });
   }
+
+  console.log(playlist)
 
   const swipSlide = agenda.data.map((data) => (
     <SwiperSlide key={"agenda_" + data.id}>
@@ -148,7 +150,7 @@ export default function Index() {
             <div className="bg-white p-2 w-full" style={{ height: divHeight }}>
               <ReactPlayer
                 controls={true}
-                url={playlist}
+                src={playlist}
                 playing={true}
                 loop={true}
                 width="100%"
