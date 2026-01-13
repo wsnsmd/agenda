@@ -42,13 +42,12 @@ export default function Index() {
     },
     {
       name: "Tampil",
-      cell: (row) => (
-        <>
-          <span
-            tabIndex="-1"
-            className="flex px-6 py-3"
-          >
-            {row.tampil ? (
+      cell: (row) => {
+        const isTampil = Number(row.tampil) === 1;
+
+        return (
+          <span tabIndex="-1" className="flex px-6 py-3">
+            {isTampil ? (
               <span className="inline-flex px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
                 Ya
               </span>
@@ -58,8 +57,8 @@ export default function Index() {
               </span>
             )}
           </span>
-        </>
-      ),
+        );
+      },
       width: "150px",
     },
     {
